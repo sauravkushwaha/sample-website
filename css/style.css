@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Chango&family=Source+Sans+Pro:wght@300&display=swap');
+
+html{
+    scroll-snap-align: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 33%;
+    border: 3px solid rgb(104, 98, 98);
+    border-radius: 50%;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    /* height: 77px; */
+}
+
+.nav-list{
+    display: flex;
+    width: 70%;
+    /* background-color:black; */
+    align-items: center;
+}
+
+.nav-list li{
+    list-style: none;
+    padding: 27px 31px;
+
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px
+    
+}
+
+.nav-list li a:hover{
+    text-decoration: none;
+    color: rgb(39, 230, 198);
+}
+.rightNav{
+    /* background: red; */
+    width: 30%;
+    text-align: right;
+    padding: 0 23px;
+}
+
+#search{
+    padding: 10px;
+    font-size: 17px;
+    border : 2px solid rgb(32, 28, 28);
+    border-radius: 10px;
+}
+.background{
+    background: rgba(0, 0, 0, 0.7) url('../img/qw.jpg');
+    background-size: cover;
+    background-blend-mode: darken;  
+}
+.firstSection{
+    height: 100vh;
+}
+
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 50%;
+    margin: auto;
+    height: 80%;
+}
+
+.firstHalf{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.secondHalf{
+    width: 30%;
+}
+
+.secondHalf img{
+    width: 70%;
+    border-radius: 200px;
+    /* padding: 0px 0px; */
+    border: 3px solid whitesmoke;
+    display: block;
+    margin: auto;
+
+}
+.text-big{
+    font-size: 50px;
+
+}
+.text-small{
+   font-size: 18px; 
+}
+.btn{
+    border: 2px solid white;
+    margin: 8px 3px;
+    padding: 8px 20px;
+    border-radius: 10px;
+    font-size: 17px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+}
+.btn-sm{
+    padding: 5px 10px;
+    vertical-align: middle;
+
+}
+.section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* height: 400px; */
+    margin: auto;
+    max-width: 80%;
+    font-family:'Source Sans Pro', sans-serif;
+    flex-direction: row;
+    padding: 10px;
+
+}
+.saurav{
+    padding: 0px 65px;
+}
+.section-left{
+    flex-direction:row-reverse;
+}
+.thumbnail img{
+    width: 250px;
+    margin-top: auto;
+    border: 1px solid black;
+    border-radius: 5%;
+}
+
+.contact{
+    background-color: rgb(209, 252, 255);
+    height: 600px;
+}
+.text-center{
+
+    text-align: center;
+    padding-top: 30px;
+   font-family: 'Source Sans Pro', sans-serif;
+       font-size: 35px;
+}
+
+.form{
+    max-width: 60%;
+    margin: 25px auto;
+}
+
+.form-input{
+    margin: 5px 0;
+    padding: 5px 13px;
+    width: 100%; 
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.text-footer{
+    text-align: center;
+    padding: 30px 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+   
+}
+.btn-dark{
+    color: black;
+}
+
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top:15px;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+
+@media only screen and (max-width: 1140px){
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+        transform: all 0.3s ease-out;
+        height:666px;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100% ;
+    }
+    .rightNav{
+        text-align: center;
+    }
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 72px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+    .section{
+        flex-direction: column-reverse;
+    }
+    .text-small{
+        text-align: center;
+    }
+    .text-big{
+        text-align: center;
+    }
+    .buttons{
+        text-align: center;
+    }
+}
